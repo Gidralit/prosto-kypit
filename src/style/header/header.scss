@@ -1,0 +1,83 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    .header__top{
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        .header__top-content{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            .profile{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &:hover{
+                    button{
+                        display: block;
+                        cursor: pointer;
+                        &:active{
+                            scale: 0.9;
+                        }
+                    }
+                }
+                button{
+                    background-color: gray;
+                    color: black;
+                    font-family: 'Courier New', Courier, monospace, sans-serif;
+                    font-weight: 600;
+                    border: none;
+                    padding: 10px;
+                    font-size: 25px;
+                    display: none;
+                }
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace, sans-serif  ;
+            }
+            span{
+                display: flex;
+                gap: 5px;
+                font-family: 'Courier New', Courier, monospace, sans-serif  ;
+                font-size: 25px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .header__bottom{
+        width: 100%;
+        display: flex;
+        background-color: gray;
+        justify-content: center;
+        .header__bottom-content{
+            width: 70%;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 10px 0;
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Courier New', Courier, monospace, sans-serif;
+                font-size: 30px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
